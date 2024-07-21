@@ -2,6 +2,8 @@
 """return tuple contain start and end index"""
 
 
-def index_range(page, page_size) -> tuple:
-    my_tuple = ((page - 1) * page_size, page_size * page)
-    return my_tuple
+def index_range(page: int, page_size: int) -> tuple:
+    """cal start & end index"""
+    start = (page - 1) * page_size
+    end = start + page_size
+    return (start, end)
