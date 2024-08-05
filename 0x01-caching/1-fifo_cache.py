@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """ implement FIFOCache """
-from base_caching import (BaseChaching)
+from base_caching import (BaseCaching)
 
 
-class FIFOCache(BaseChaching):
+class FIFOCache(BaseCaching):
     """ Implement FIFOCache """
 
     def __init__(self):
