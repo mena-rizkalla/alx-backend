@@ -23,7 +23,7 @@ class FIFOCache(BaseCaching):
         if len(self.cache_data) > BaseCaching.MAX_ITEMS:
             # remove first item from cache_data
             oldest_key = self.order.pop(0)
-            del sel.cache_data[oldest_key]
+            del self.cache_data[oldest_key]
             print(f"DISCARD: {oldest_key}")
 
         def get(self, key):
