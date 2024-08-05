@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ implement FIFOCache """
-from base_caching import(BaseChaching)
+from base_caching import (BaseChaching)
 
 
 class FIFOCache(BaseChaching):
@@ -16,7 +16,7 @@ class FIFOCache(BaseChaching):
         if key is None or item is None:
             return
 
-        if key not in self.cache_date;
+        if key not in self.cache_date:
             self.order.append(key)
         self.cache_data[key] = item
 
@@ -28,7 +28,6 @@ class FIFOCache(BaseChaching):
 
         def get(self, key):
             """ get an item from the cache """
-            if key is None or key is not in self.cache_data:
+            if key is None or key not in self.cache_data:
                 return None
             return self.cache_data[key]
-
