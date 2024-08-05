@@ -16,7 +16,7 @@ class FIFOCache(BaseCaching):
         if key is None or item is None:
             return
 
-        if key not in self.cache_date:
+        if key not in self.cache_data:
             self.order.append(key)
         self.cache_data[key] = item
 
